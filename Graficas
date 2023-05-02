@@ -1,0 +1,13 @@
+DF1=pd.DataFrame()
+DF1['Variables']=['Transporte terrestre', 'Transporte aéreo']
+DF1['Cantidad']=[89,11]
+
+fig, ax = plt.subplots()
+ax.pie(DF1['Cantidad'], labels=DF1['Variables'], autopct='%1.1f%%', startangle=90)
+
+# Configuramos la etiqueta del centro
+ax.set_title('Porcentaje de aporte')
+ax.legend(title='Sector transporte', loc='center left', bbox_to_anchor=(1, 0, 0.5, 1))
+
+# Mostramos la gráfica
+plt.show()
