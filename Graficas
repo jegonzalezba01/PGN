@@ -1,8 +1,10 @@
+# Datos
 DF1=pd.DataFrame()
 DF1['Variables']=['Transporte terrestre', 'Transporte aéreo']
 DF1['Cantidad']=[89,11]
 
-fig, ax = plt.subplots()
+# Se configura el estilo de grafica y el tamaño para que al ser exportado las dimenciones coincidan
+fig, ax = plt.subplots(figsize=(10, 6))
 ax.pie(DF1['Cantidad'], labels=DF1['Variables'], autopct='%1.1f%%', startangle=90)
 
 # Configuramos la etiqueta del centro
