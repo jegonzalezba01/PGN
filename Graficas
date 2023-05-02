@@ -10,4 +10,5 @@ ax.set_title('Porcentaje de aporte')
 ax.legend(title='Sector transporte', loc='center left', bbox_to_anchor=(1, 0, 0.5, 1))
 
 # Mostramos la gráfica
+fig.savefig('STransporte.pdf', dpi=300)
 plt.show()
